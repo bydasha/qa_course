@@ -38,7 +38,7 @@
  -- 10. Вывести пользователей где в имени есть слово Анна
 	select name
 	from students
-	where name like 'Анна%';
+	where name like '%Анна%';
 
  -- 11. Вывести пользователей где в имени в конце есть 8
 	select name
@@ -65,7 +65,7 @@
 	select name
 	from students 
 	where created_on='2021-07-12 00:00:00' 
-	and name like 'Andrey%';
+	and name like '%Andrey%';
 
  -- 16. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
 	select name
@@ -99,10 +99,6 @@
 	where id < 27 or id > 88;
 
  -- 22. Вывести пользователя у которых id меньше либо равно 37
-	select name
-	from students 
-	where id < 37 or id = 37;
-
 	select name
 	from students 
 	where id <= 37;
